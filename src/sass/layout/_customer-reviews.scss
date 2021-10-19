@@ -1,11 +1,13 @@
 .customer-reviews {
+  padding-top: 123px;
+  padding-bottom: 132px;
+}
+
+.slider {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  padding-top: 0;
-  padding-bottom: 0;
 }
 
 .slider__image {
@@ -18,12 +20,66 @@
 }
 
 .slider_customer-review-text {
-  padding-top: 47;
+  padding-top: 47px;
   padding-right: 88px;
   padding-bottom: 39px;
   padding-left: 88px;
-  background-color: $main-gray;
+
+  margin-bottom: 15px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+
+  background-color: $customer-review-grey;
 }
 
-.slider__customer-about {
+.slider__customer-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 35px;
+
+  font-weight: 500;
+  font-size: 20;
+  line-height: 1.86;
+  letter-spacing: 0;
 }
+
+.slider__customer-name::before {
+  content: '';
+  display: block;
+  background-image: url('../images/svg/dots.svg');
+  width: 32px;
+  height: 4px;
+  margin-bottom: 15px;
+}
+
+.radiobtn-group {
+  position: relative;
+  overflow: visible;
+}
+
+.radiobtn {
+  position: absolute;
+  bottom: -30px;
+}
+
+.label-radio + .label-radio {
+  margin-left: 18px;
+}
+.slider__icon {
+  width: 12px;
+  height: 12px;
+
+  fill: $dot-gray-color;
+}
+
+.slider__icon:hover {
+  fill: $copy-right-color;
+}
+// .label-radio::after {
+//   content: "";
+//   display: inline-block;
+//   background-image: url();
+// }
