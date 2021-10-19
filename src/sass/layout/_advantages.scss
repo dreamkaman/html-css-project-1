@@ -107,7 +107,7 @@ width: 230px;
 .advantages-item:nth-child(3n)::before{
     content: '';
     display: block;
-    // background-image: url(../../images/advantages/advantages-icon3.png);
+    background-image: url("../../images/advantages/advantages-icon3.png");
     background-repeat: no-repeat;
     width: 44px;
     height: 50px;
