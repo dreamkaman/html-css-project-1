@@ -1,6 +1,7 @@
+
 .advantages {
     padding-bottom: 97px;
-    background-color: var(--section-pink);
+    background-color:#fff5f6;
 
 @media screen and (min-width: 768px) {
     padding-top: 0;
@@ -9,13 +10,13 @@
 @media screen and (min-width: 1280px) {
     padding-bottom: 139px;
 }
-.advantages-list {
+.list {
 margin: -19px;
 @media screen and (min-width: 480px) {
     padding-left: 20px;
 }
 @media screen and (min-width: 768px) {
-    padding-left: 20px;
+    padding-left: 0;
     display: flex;
     margin: -30px;
 }
@@ -26,21 +27,28 @@ margin: -19px;
 .advantages-item {
 width: calc((100%-76px) / 3);
 margin: 19px;
+
 @media screen and (min-width: 768px) {
+    width: calc((100%-120px) / 3);
+    margin: 30px;
+}
+@media screen and(min-width: 1280px) {
     width: calc((100%-60px) / 3);
     margin: 15px;
 }
 }
 .advantages-numbers {
-font-family: var(--text-font-family);
+font-family: Titan One;
 font-size: 36px;
 line-height: 1.14;
 letter-spacing: 0.04em;
 text-transform: uppercase;
-margin-bottom: 16px;
-color: var(--main-pink-color);
 
-@media screen and (min-width: 768px){
+color:rgba(212, 20, 67, 1);
+margin-bottom: 16px;
+
+
+@media screen and (min-width: 768px) {
     text-transform: none;
     font-size: 48px;
     line-height: 1.15;
@@ -52,12 +60,12 @@ color: var(--main-pink-color);
 }
 }
 .advantages-descriptions{
-font-family: var(--main-font-family);
+font-family: DM Sans;
 font-weight: 700;
 font-size: 12px;
 line-height: 1.7;
 width: 230px;
-
+color: rgba(0, 0, 0, 1);
 @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.76;
@@ -74,7 +82,7 @@ width: 230px;
 }
 }
 
-.advantages-item:first-child::before {
+.advantages-item:first-child::before{
     content:'';
     display: block;
     background-image: url(../images/advantages/advantages-icon1.png);
