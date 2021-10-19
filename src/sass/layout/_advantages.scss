@@ -1,4 +1,5 @@
 .advantages {
+    padding-bottom: 97px;
     background-color: var(--section-pink);
 
 @media screen and (min-width: 768px) {
@@ -8,7 +9,7 @@
 @media screen and (min-width: 1280px) {
     padding-bottom: 139px;
 }
-.list {
+.advantages-list {
 margin: -19px;
 @media screen and (min-width: 480px) {
     padding-left: 20px;
@@ -22,7 +23,7 @@ margin: -19px;
     margin: -15px;
 }
 }
-.item {
+.advantages-item {
 width: calc((100%-76px) / 3);
 margin: 19px;
 @media screen and (min-width: 768px) {
@@ -30,7 +31,7 @@ margin: 19px;
     margin: 15px;
 }
 }
-.numbers {
+.advantages-numbers {
 font-family: var(--text-font-family);
 font-size: 36px;
 line-height: 1.14;
@@ -50,13 +51,12 @@ color: var(--main-pink-color);
     font-size: 58px;
 }
 }
-.descriptions{
+.advantages-descriptions{
 font-family: var(--main-font-family);
 font-weight: 700;
 font-size: 12px;
 line-height: 1.7;
 width: 230px;
-color: var(--main-black-color);
 
 @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -72,4 +72,50 @@ color: var(--main-black-color);
     width: 330px;
 }
 }
+}
+
+.advantages-item:first-child::before {
+    content:'';
+    display: block;
+    background-image: url(./images/advantages/advantages-icon1.png);
+    background-repeat: no-repeat;
+    width: 33px;
+    height: 50px;
+    margin-bottom: 16px;
+    @media screen and (min-width: 768px){
+        margin-bottom: 36px;
+    }
+    @media screen and (min: width 1280px) {
+        margin-bottom: 40px;
+    }
+}
+.advantages-item:not(:first-child){
+    content: '';
+    display: block;
+    background-image: url(./images/advantages/advantages-icon2.png);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 16px;
+     @media screen and (min-width: 768px){
+         margin-bottom: 36px;
+}
+@media screen and (min: width 1280px) {
+        margin-bottom: 40px;
+    }
+}
+.advantages-item:not(:first-child){
+    content: '';
+    display: block;
+    background-image: url(./images/advantages/advantages-icon3.png);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 16px;
+     @media screen and (min-width: 768px){
+         margin-bottom: 36px;
+}
+@media screen and (min: width 1280px) {
+        margin-bottom: 40px;
+    }
 }
