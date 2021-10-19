@@ -1,4 +1,9 @@
 .customer-reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -10,4 +15,15 @@
 
 .slider__image--margin {
   margin-bottom: 15px;
+}
+
+.slider_customer-review-text {
+  padding-top: 47;
+  padding-right: 88px;
+  padding-bottom: 39px;
+  padding-left: 88px;
+  background-color: $main-gray;
+}
+
+.slider__customer-about {
 }
