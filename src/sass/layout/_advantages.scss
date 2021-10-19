@@ -89,7 +89,7 @@ width: 230px;
         margin-bottom: 40px;
     }
 }
-.advantages-item:not(:first-child){
+.advantages-item:nth-child(2n)::before{
     content: '';
     display: block;
     background-image: url(./images/advantages/advantages-icon2.png);
@@ -104,18 +104,18 @@ width: 230px;
         margin-bottom: 40px;
     }
 }
-.advantages-item:not(:first-child){
+.advantages-item:nth-child(3n)::before{
     content: '';
     display: block;
     background-image: url(./images/advantages/advantages-icon3.png);
     background-repeat: no-repeat;
-    width: 50px;
+    width: 44px;
     height: 50px;
     margin-bottom: 16px;
      @media screen and (min-width: 768px){
          margin-bottom: 36px;
 }
-@media screen and (min: width 1280px) {
+@media screen and (min-width: 1280px) {
         margin-bottom: 40px;
     }
 }
