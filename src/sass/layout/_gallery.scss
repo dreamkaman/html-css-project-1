@@ -1,12 +1,12 @@
 .gallery {
   min-height: 50vh;
-  background: linear-gradient(to bottom, #fff5f6 31%, #ffffff 20% 100%);
+  background: linear-gradient(to bottom, $section-pink 31%, $main-white-color 20% 100%);
 
   @media screen and(min-width:768px) {
-    background: linear-gradient(to bottom, #fff5f6 27%, #ffffff 10% 100%);
+    background: linear-gradient(to bottom, $section-pink 27%, $main-white-color 10% 100%);
   }
   @media screen and(min-width:1200px) {
-    background: linear-gradient(to bottom, #fff5f6 22.8%, #ffffff 4% 100%);
+    background: linear-gradient(to bottom, $section-pink 22.8%, $main-white-color 4% 100%);
   }
 }
 
