@@ -1,7 +1,7 @@
 .gallery {
   min-height: 50vh;
-  background: linear-gradient(to bottom, $section-pink 31%, $main-white-color 20% 100%);
-
+  background-color: linear-gradient(to bottom, $section-pink 31%, $main-white-color 20% 100%);
+  // padding: 0;
   @media screen and(min-width:768px) {
     background: linear-gradient(to bottom, $section-pink 27%, $main-white-color 10% 100%);
   }
