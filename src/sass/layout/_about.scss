@@ -31,15 +31,19 @@
       background-size: 100% auto;
     }
   }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    background-image: none;
+  }
 }
+
 .left-side {
-  @media screen and (min-width: 786px) {
+  @media screen and (min-width: 768px) {
     width: calc(100% / 2 - 15px);
     padding-left: 17px;
   }
 }
 .about-container {
-  @media screen and (min-width: 786px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
     // align-items: flex-end;
@@ -57,7 +61,7 @@
   padding: 125px 61px 0 61px;
   margin-bottom: 15px;
   //   color: var(--pink-text-color);
-  @media screen and (min-width: 786px) {
+  @media screen and (min-width: 768px) {
     font-family: Titan One;
     font-weight: 400;
     font-size: 26px;
@@ -87,7 +91,7 @@
   text-transform: uppercase;
   color: #d41443;
   margin-bottom: 50px;
-  @media screen and (min-width: 786px) {
+  @media screen and (min-width: 768px) {
     font-family: Titan One;
     font-weight: 400;
     font-size: 48px;
@@ -115,7 +119,7 @@
   border: none;
   padding: 19px 38px 17px 36px;
   align-items: center;
-  // margin: 17px 94px 39px 50px;
+  margin: 0;
   font-family: DM Sans;
   font-weight: 700;
   font-size: 14px;
@@ -124,7 +128,8 @@
   align-items: center;
   text-align: center;
   color: #d41443;
-  @media screen and (min-width: 786px) {
+
+  @media screen and (min-width: 768px) {
     margin-left: 17px;
   }
 }
@@ -145,7 +150,7 @@
 
 .cow-img {
   margin: 26px 20px 46px;
-  @media screen and (min-width: 786px) {
+  @media screen and (min-width: 768px) {
     margin: 0;
   }
 }
@@ -161,7 +166,7 @@
   // padding: 46px 50px 47px 50px;
   margin-bottom: 47px;
 
-  @media screen and(min-width:786px) {
+  @media screen and(min-width:768px) {
     // display: flex;
     // align-items: center;
     font-family: DM Sans;
@@ -186,7 +191,7 @@
   margin-bottom: 17px;
   // margin: 47px 50px 47px 50px;
 
-  @media screen and(min-width:786px) {
+  @media screen and(min-width:768px) {
     // display: flex;
     // justify-content: space-between;
     font-family: DM Sans;
@@ -199,7 +204,7 @@
   }
 }
 .right-side {
-  @media screen and (min-width: 786px) {
+  @media screen and (min-width: 768px) {
     width: calc(100% / 2 - 15px);
   }
 }
