@@ -1,50 +1,7 @@
-.container {
-<<<<<<< Updated upstream
-  width: 767px;
-=======
-  max-width: 767px;
->>>>>>> Stashed changes
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-<<<<<<< Updated upstream
-    width: 720px;
-=======
-    max-width: 720px;
->>>>>>> Stashed changes
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .container {
-<<<<<<< Updated upstream
-    width: 1080px;
-=======
-    min-width: 1080px;
->>>>>>> Stashed changes
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-<<<<<<< Updated upstream
 .gallery {
-  //   position: relative;
   min-height: 50vh;
   background: linear-gradient(to bottom, #fff5f6 31%, #ffffff 20% 100%);
-  //   @media screen and (max-width: 767px) {
-  //     min-height: 50vh;
-  //     background: linear-gradient(to bottom, #fff5f6 40%, #ffffff 20% 100%);
-  //   }
+
   @media screen and(min-width:768px) {
     background: linear-gradient(to bottom, #fff5f6 27%, #ffffff 10% 100%);
   }
@@ -52,18 +9,12 @@
     background: linear-gradient(to bottom, #fff5f6 22.8%, #ffffff 4% 100%);
   }
 }
-// .pictures {
-//   position: absolute;
-//   width: 100%;
-// }
-=======
 
-.gallery {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(./images/images-gallery/desk-gallery.jpg);
-  background-size: cover;
-  background-color: #2f303a;
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
->>>>>>> Stashed changes
+// .gallery {
+//   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//     url(./images/images-gallery/desk-gallery.jpg);
+//   background-size: cover;
+//   background-color: #2f303a;
+//   padding-top: 200px;
+//   padding-bottom: 200px;
+// }
