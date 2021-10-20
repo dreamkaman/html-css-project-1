@@ -32,7 +32,15 @@
 }
 
 .s1 {
-  transform-origin: left;
+  transform: translateX(0);
+}
+
+.s1:hover {
+  transform: translateX(-100%);
+
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .slide__image {
