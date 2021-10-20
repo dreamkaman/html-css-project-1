@@ -1,7 +1,7 @@
 
 .advantages {
     padding-bottom: 97px;
-    background-color:#fff5f6;
+    background-color:$section-pink;
 
 @media screen and (min-width: 768px) {
     padding-top: 0;
@@ -38,13 +38,13 @@ margin: 19px;
 }
 }
 .advantages-numbers {
-font-family: Titan One;
+font-family: $text-font-family;
 font-size: 36px;
 line-height: 1.14;
 letter-spacing: 0.04em;
 text-transform: uppercase;
 
-color:rgba(212, 20, 67, 1);
+color:$main-pink-color;
 margin-bottom: 16px;
 
 
@@ -60,12 +60,12 @@ margin-bottom: 16px;
 }
 }
 .advantages-descriptions{
-font-family: DM Sans;
+font-family: $main-font-family;
 font-weight: 700;
 font-size: 12px;
 line-height: 1.7;
 width: 230px;
-color: rgba(0, 0, 0, 1);
+color:$main-black-color;
 @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.76;
