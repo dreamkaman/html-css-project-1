@@ -57,6 +57,14 @@
   text-align: center;
 }
 
+// .slider__customer-review-text::before {
+//   content: '';
+//   display: inline-block;
+//   background-image: url('../images/svg/quotes-icon.svg');
+//   background-position: center;
+//   background-repeat: no-repeat;
+// }
+
 #radio1:checked ~ .radiobtn-group label[for='radio1']::before {
   background-image: url('../images/svg/marker-icon.svg');
   background-size: contain;
