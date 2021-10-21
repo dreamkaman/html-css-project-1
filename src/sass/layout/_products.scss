@@ -40,7 +40,7 @@
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: $main-white-color;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -107,7 +107,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: $main-white-color;
   margin-bottom: 30px;
 
   @media screen and (min-width: 1200px) {
@@ -206,7 +206,7 @@
   height: 40px;
   display: block;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: $main-white-color;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -225,18 +225,18 @@
 
 .btn-new-page:hover,
 .btn-new-page:focus {
-  background-color: #131391;
-  transform: scale(1.8) rotate(720deg);
+  background-color: $mobile-menu-bg-color;
+  transform: scale(1.05) rotate(360deg);
 }
 
 .products-link-icon {
-  width: 25px;
-  height: 25px;
-  fill: red;
-  transition: fill 500ms linear;
+  width: 10px;
+  height: 10px;
+  fill: $main-pink-color;
+  transition: fill 500ms $timing-function;
 }
 
 .btn-new-page:hover .products-link-icon,
 .btn-new-page:focus .products-link-icon {
-  fill: #ffffff;
+  fill: $main-white-color;
 }
