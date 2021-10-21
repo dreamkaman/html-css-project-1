@@ -2,6 +2,7 @@
 .about {
   background-color: $section-pink;
   padding-bottom: 146px;
+  padding-top: 125px;
 
   @media screen and (max-width: 767px) {
     background-image: url(../images/about-images/mobile-about-bg.png);
@@ -48,71 +49,80 @@
     // align-items: flex-end;
   }
 }
-
-.about-title {
-  font-family: Titan One;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.16;
-  text-align: center;
-  text-transform: uppercase;
-  color: $pink-text-color;
-  padding: 125px 61px 0 61px;
-  margin-bottom: 15px;
-  //   color: var(--pink-text-color);
-  @media screen and (min-width: 768px) {
-    font-family: Titan One;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 1.15;
-    text-align: center;
-    text-transform: uppercase;
-    color: $pink-text-color;
-  }
-  @media screen and (min-width: 1200px) {
-    font-family: Titan One;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 1.13;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: $pink-text-color;
-  }
-}
-.about-suptitle {
-  font-family: Titan One;
-  font-weight: 400;
-  font-size: 34px;
-  line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: $main-pink-color;
+.section-title {
   margin-bottom: 50px;
+
   @media screen and (min-width: 768px) {
-    font-family: Titan One;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 1.14;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: $main-pink-color;
     margin-bottom: 100px;
   }
-  @media screen and (min-width: 1200px) {
-    font-family: Titan One;
-    font-weight: 400;
-    font-size: 58px;
-    line-height: 1.13;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: $main-pink-color;
-    margin-bottom: 106px;
-  }
+
+  margin-bottom: 106px;
 }
+
+// .about-title {
+//   font-family: Titan One;
+//   font-weight: 400;
+//   font-size: 18px;
+//   line-height: 1.16;
+//   text-align: center;
+//   text-transform: uppercase;
+//   color: $pink-text-color;
+//   padding: 125px 61px 0 61px;
+//   margin-bottom: 15px;
+//   //   color: var(--pink-text-color);
+//   @media screen and (min-width: 768px) {
+//     font-family: Titan One;
+//     font-weight: 400;
+//     font-size: 26px;
+//     line-height: 1.15;
+//     text-align: center;
+//     text-transform: uppercase;
+//     color: $pink-text-color;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     font-family: Titan One;
+//     font-weight: 400;
+//     font-size: 30px;
+//     line-height: 1.13;
+//     text-align: center;
+//     letter-spacing: 0.04em;
+//     text-transform: uppercase;
+//     color: $pink-text-color;
+//   }
+// }
+// .about-suptitle {
+//   font-family: Titan One;
+//   font-weight: 400;
+//   font-size: 34px;
+//   line-height: 1.14;
+//   text-align: center;
+//   letter-spacing: 0.04em;
+//   text-transform: uppercase;
+//   color: $main-pink-color;
+//   margin-bottom: 50px;
+//   @media screen and (min-width: 768px) {
+//     font-family: Titan One;
+//     font-weight: 400;
+//     font-size: 48px;
+//     line-height: 1.14;
+//     text-align: center;
+//     letter-spacing: 0.04em;
+//     text-transform: uppercase;
+//     color: $main-pink-color;
+//     margin-bottom: 100px;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     font-family: Titan One;
+//     font-weight: 400;
+//     font-size: 58px;
+//     line-height: 1.13;
+//     text-align: center;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+//     color: $main-pink-color;
+//     margin-bottom: 106px;
+//   }
+// }
 
 .about-button {
   background: $main-white-color;
