@@ -1,4 +1,4 @@
-// ABOUT
+// ABOUt//
 .about {
   background-color: $section-pink;
   padding-bottom: 146px;
@@ -8,30 +8,28 @@
     background-repeat: no-repeat;
     background-position: center bottom 200px;
     background-size: 100% auto;
-  }
-  // @media (min-resolution: 2dppx) {
-  //   & {
-  //     background-image: url(../images/about-images/mobile-about-bg2x.png);
-  //     background-repeat: no-repeat;
-  //     background-position: center bottom;
-  //     background-size: 100% auto;
-  //   }
-  // }
 
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about-images/mobile-about-bg2x.png);
+      background-repeat: no-repeat;
+      background-position: center bottom 200px;
+      background-size: 100% auto;
+    }
+  }
   @media screen and (min-width: 1200px) {
     background-image: url(../images/about-images/desk-about-bg.png);
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 100% auto;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about-images/desk-about-bg2x.png);
+      background-repeat: no-repeat;
+      background-position: center bottom 50px;
+      background-size: 100% auto;
+    }
   }
-  // @media (min-resolution: 2dppx) {
-  //   & {
-  //     background-image: url(../images/about-images/desk-about-bg2x.png);
-  //     background-repeat: no-repeat;
-  //     background-position: center bottom;
-  //     background-size: 100% auto;
-  //   }
-  // }
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     background-image: none;
   }
@@ -145,6 +143,8 @@
 .arrow-icon {
   stroke: $main-pink-color;
   margin-left: 14px;
+  width: 4px;
+  height: 8px;
 }
 .about-button:hover,
 .about-button:focus {
