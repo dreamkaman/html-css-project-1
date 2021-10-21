@@ -1,9 +1,7 @@
 .contacts-section{
     padding: 113px;
     background-color: $section-pink;
-    background-repeat: no-repeat;
-    background-position: center;
- @media screen and (min-width: 320px) {
+    @media screen and (min-width: 320px) {
     background-image: linear-gradient(
       to bottom,
       $main-white-color 172px,
@@ -18,7 +16,7 @@
 }
 
 .contacts-item {
-min-width: 220px;
+max-width: 100%;
 margin-left: 20px;
 margin-right: 20px;
 padding: 43px 20px;
@@ -40,6 +38,7 @@ border-radius: 24px;
   background: $card-bg-yellow;
   color:$main-white-color;
 }
+
 .contacts-section-cards{
 padding-top: 25px;
 padding-bottom: 25px;
@@ -68,6 +67,7 @@ border-bottom: 1px solid #E1E1E1;
   color:$copy-right-color;
 }
 .contact-link{
+  font-family:$main-font-family;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -80,6 +80,7 @@ border-bottom: 1px solid #E1E1E1;
 }
 }
 .contacts-days{
+font-family:$main-font-family ;
 font-weight: 500;
 font-size: 12px;
 line-height: 1.86;
@@ -87,6 +88,7 @@ color: $main-black-color;
 }
 
 .contacts-time {
+  font-family:$main-font-family ;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.86;
@@ -96,3 +98,4 @@ color: $main-black-color;
     margin-bottom: 10px;
   }
 }
+
