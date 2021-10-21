@@ -39,8 +39,7 @@
   display: flex;
   justify-content: flex-end;
   padding: 0;
-  margin-top: 0;
-  margin-bottom: 50px;
+  margin: 0;
 }
 .social-list__item:not(:last-child) {
   margin-right: 25px;
@@ -59,7 +58,8 @@
   font-weight: 400;
   color: $pink-text-color;
   text-transform: uppercase;
-  max-width: 232px;
+  max-width: 510px;
+
   @media screen and (min-width: 768px) {
     font-size: 26px;
     line-height: 30px;
@@ -71,6 +71,7 @@
     max-width: 474px;
   }
 }
+
 .footer__text-accent {
   text-transform: uppercase;
   font-weight: 400;
