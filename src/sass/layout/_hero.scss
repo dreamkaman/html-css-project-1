@@ -65,6 +65,7 @@
         z-index: 5;
         cursor: pointer;
         transition: background-color 250ms $timing-function;
+        text-decoration: none;
 
     &:hover,
     &:focus {
@@ -89,7 +90,8 @@
         z-index: 5;
         cursor: pointer;
         transition: background-color 250ms $timing-function;
-
+        text-decoration: none;
+        
     &:hover,
     &:focus {
         background-color: $hover-gray;
