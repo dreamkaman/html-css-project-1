@@ -14,10 +14,10 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 930px;
-  height: 303px;
+  width: 280px;
+  height: 500px;
   // position: relative;
-  overflow: visible; //temporary
+  overflow: hidden; //temporary
 }
 
 .slide {
@@ -29,18 +29,19 @@
 
   top: 0;
   left: 0;
+  // transform: translate(-50% -50%);
 }
 
 .s1 {
-  transform: translateX(0);
+  transform: translateX(-500%);
 }
 
-.s1:hover {
-  transform: translateX(-100%);
+.s2 {
+  transform: translateX(-500%);
+}
 
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.s3 {
+  transform: translateX(-500%);
 }
 
 .slide__image {
@@ -64,8 +65,6 @@
   padding-right: 50px;
   padding-bottom: 26px;
   padding-left: 57px;
-
-  margin-bottom: 30px;
 }
 
 .slider__customer-review-text {
@@ -98,10 +97,56 @@
   background-repeat: no-repeat;
 }
 
+.slider__customer-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 20;
+  line-height: 1.86;
+  letter-spacing: 0;
+}
+
+.slider__customer-name::before {
+  content: '';
+  display: block;
+  background-image: url('../images/svg/dots.svg');
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 4px;
+  margin-top: 30px;
+  margin-bottom: 18px;
+}
+
 #radio1:checked ~ .radiobtn-group label[for='radio1']::before {
   background-image: url('../images/svg/marker-icon.svg');
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+#radio1:checked ~ .sliders .s1 {
+  transform: translateX(0);
+
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+}
+
+#radio2:checked ~ .sliders .s2 {
+  transform: translateX(0);
+
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+}
+
+#radio3:checked ~ .sliders .s3 {
+  transform: translateX(0);
+
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
 }
 
 #radio2:checked ~ .radiobtn-group label[for='radio2']::before {
@@ -129,6 +174,11 @@
     // padding-bottom: 86px;
   }
 
+  .sliders {
+    // width: 280px;
+    // height: 500px;
+  }
+
   .slider__customer-review-container {
     width: 440px;
 
@@ -138,13 +188,18 @@
   .slider__customer-review-text-wrapper {
     padding-top: 43px;
     padding-right: 50px;
-    padding-bottom: 26px;
+    padding-bottom: 30px;
     padding-left: 57px;
   }
 
   .slider__customer-review-text::before {
     left: 46px;
     top: 32px;
+  }
+
+  .slider__customer-name::before {
+    margin-top: 30px;
+    margin-bottom: 18px;
   }
 
   .radiobtn-group {
@@ -158,13 +213,19 @@
     padding-bottom: 120px;
   }
 
+  .sliders {
+    width: 620px;
+    height: 356px;
+  }
+
   .slider__customer-review-container {
     width: 740px;
   }
 
   .slide__body {
     width: 620px;
-    margin: 0 auto;
+    // margin: 0 auto;
+    // margin-bottom: 30px;
   }
 
   .slider__customer-review-text-wrapper {
@@ -172,8 +233,6 @@
     padding-right: 80px;
     padding-bottom: 34px;
     padding-left: 80px;
-
-    margin-bottom: 24px;
   }
 
   .slider__customer-review-text {
@@ -187,12 +246,22 @@
     left: 52px;
     top: 36px;
   }
+
+  .slider__customer-name::before {
+    margin-top: 24px;
+    margin-bottom: 14px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .customer-reviews {
     padding-top: 123px;
     padding-bottom: 132px;
+  }
+
+  .sliders {
+    width: 930px;
+    height: 327px;
   }
 
   .slider__customer-review-container {
@@ -214,38 +283,20 @@
     padding-right: 54px;
     padding-bottom: 39px;
     padding-left: 50px;
-
-    margin-bottom: 15px;
   }
 
   .slider__customer-review-text::before {
     left: 22px;
     top: 35px;
   }
+
+  .slider__customer-name::before {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
 }
 
 //============================================================================================================================
-
-.slider__customer-name {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  font-weight: 500;
-  font-size: 20;
-  line-height: 1.86;
-  letter-spacing: 0;
-}
-
-.slider__customer-name::before {
-  content: '';
-  display: block;
-  background-image: url('../images/svg/dots.svg');
-  background-repeat: no-repeat;
-  width: 32px;
-  height: 4px;
-  margin-bottom: 15px;
-}
 
 .radiobtn {
   // position: absolute;
