@@ -157,11 +157,6 @@ header {
     margin-right: 0;
     border: 1px solid $modal-menu-border-color;
 }
-.nav-item:hover,
-.nav-item:focus {
-    background-color: #e05b7a;
-}
-
 .currentlink:focus {
     color: $main-pink-color;
 }
