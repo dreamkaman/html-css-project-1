@@ -1,0 +1,333 @@
+.customer-reviews {
+  padding-top: 80px;
+  padding-bottom: 86px;
+}
+
+.sliders-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sliders {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 280px;
+  height: 500px;
+  // position: relative;
+  overflow: hidden; //temporary
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  // transform: translate(-50% -50%);
+}
+
+.s1 {
+  transform: translateX(-500%);
+}
+
+.s2 {
+  transform: translateX(-500%);
+}
+
+.s3 {
+  transform: translateX(-500%);
+}
+
+.slide__image {
+  width: 85px;
+  height: 85px;
+}
+
+.slide__image--margin {
+  margin-bottom: 15px;
+}
+
+//===========================================================================================================================
+.slider__customer-review-container {
+  padding: 0 20px;
+}
+
+.slider__customer-review-text-wrapper {
+  position: relative;
+  background-color: $customer-review-grey;
+  padding-top: 43px;
+  padding-right: 50px;
+  padding-bottom: 26px;
+  padding-left: 57px;
+}
+
+.slider__customer-review-text {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+  text-align: center;
+
+  padding: 0 10px;
+  background-image: repeating-linear-gradient(
+    to top,
+    $section-gray-color 0px 1px,
+    transparent 1px 30px
+  );
+}
+
+.slider__customer-review-text::before {
+  content: '';
+  position: absolute;
+  // z-index: 0;
+  left: 46px;
+  top: 32px;
+  width: 54px;
+  height: 40px;
+  display: inline-block;
+
+  background-image: url('../images/svg/quotes-icon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slider__customer-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 20;
+  line-height: 1.86;
+  letter-spacing: 0;
+}
+
+.slider__customer-name::before {
+  content: '';
+  display: block;
+  background-image: url('../images/svg/dots.svg');
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 4px;
+  margin-top: 30px;
+  margin-bottom: 18px;
+}
+
+#radio1:checked ~ .radiobtn-group label[for='radio1']::before {
+  background-image: url('../images/svg/marker-icon.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#radio1:checked ~ .sliders .s1 {
+  transform: translateX(0);
+
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+}
+
+#radio2:checked ~ .sliders .s2 {
+  transform: translateX(0);
+
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+}
+
+#radio3:checked ~ .sliders .s3 {
+  transform: translateX(0);
+
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+}
+
+#radio2:checked ~ .radiobtn-group label[for='radio2']::before {
+  background-image: url('../images/svg/marker-icon.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#radio3:checked ~ .radiobtn-group label[for='radio3']::before {
+  background-image: url('../images/svg/marker-icon.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.radiobtn-group {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 35px;
+}
+
+@media screen and (min-width: 480px) {
+  .customer-reviews {
+    // padding-top: 80px;
+    // padding-bottom: 86px;
+  }
+
+  .sliders {
+    // width: 280px;
+    // height: 500px;
+  }
+
+  .slider__customer-review-container {
+    width: 440px;
+
+    // margin: 0 auto;
+  }
+
+  .slider__customer-review-text-wrapper {
+    padding-top: 43px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    padding-left: 57px;
+  }
+
+  .slider__customer-review-text::before {
+    left: 46px;
+    top: 32px;
+  }
+
+  .slider__customer-name::before {
+    margin-top: 30px;
+    margin-bottom: 18px;
+  }
+
+  .radiobtn-group {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customer-reviews {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .sliders {
+    width: 620px;
+    height: 356px;
+  }
+
+  .slider__customer-review-container {
+    width: 740px;
+  }
+
+  .slide__body {
+    width: 620px;
+    // margin: 0 auto;
+    // margin-bottom: 30px;
+  }
+
+  .slider__customer-review-text-wrapper {
+    padding-top: 47px;
+    padding-right: 80px;
+    padding-bottom: 34px;
+    padding-left: 80px;
+  }
+
+  .slider__customer-review-text {
+    font-size: 14px;
+    line-height: 2.16;
+    letter-spacing: 0.04em;
+    padding: 0 24px;
+  }
+
+  .slider__customer-review-text::before {
+    left: 52px;
+    top: 36px;
+  }
+
+  .slider__customer-name::before {
+    margin-top: 24px;
+    margin-bottom: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customer-reviews {
+    padding-top: 123px;
+    padding-bottom: 132px;
+  }
+
+  .sliders {
+    width: 930px;
+    height: 327px;
+  }
+
+  .slider__customer-review-container {
+    width: 1090px;
+  }
+
+  .slide__body {
+    width: 926px;
+  }
+
+  .slider__customer-review-text {
+    font-size: 16px;
+    line-height: 1.86;
+    padding: 0 4px;
+  }
+
+  .slider__customer-review-text-wrapper {
+    padding-top: 47px;
+    padding-right: 54px;
+    padding-bottom: 39px;
+    padding-left: 50px;
+  }
+
+  .slider__customer-review-text::before {
+    left: 22px;
+    top: 35px;
+  }
+
+  .slider__customer-name::before {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+//============================================================================================================================
+
+.radiobtn {
+  // position: absolute;
+  // top: -50px;
+  // bottom: 0;
+}
+
+.label-radio::before {
+  content: '';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  width: 12px;
+  height: 12px;
+  background-image: url('../images/svg/dot-slider.svg');
+  background-repeat: no-repeat;
+}
+
+.label-radio + .label-radio {
+  margin-left: 18px;
+}
+.slider__icon {
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+
+  fill: $dot-gray-color;
+}
+
+.slider__icon:hover {
+  fill: $copy-right-color;
+}
