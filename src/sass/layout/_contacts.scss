@@ -129,38 +129,39 @@ color: $main-black-color;
 }
 
 @media screen and (min-width: 768px) {
-  .contacts-section {
-    padding-bottom: 158px;
-    background-image: linear-gradient(
-      to bottom,
-      $main-white-color 197px,
-      $section-pink 197px
-    );
-  }
+    .contacts-section {
+      padding-bottom: 158px;
+      background-image: linear-gradient(
+        to bottom,
+        $main-white-color 197px,
+        $section-pink 197px
+      );
+    }
 
-  .contacts-buttons {
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 80px;
+    .contacts-buttons {
+      flex-direction: row;
+      justify-content: center;
+      padding-top: 80px;
 
-    .item {
-    :last-child {
-    margin: 0 0 0 15px;
-  }
-}
+        .item {
+        :last-child {
+        margin: 0 0 0 15px;
+      }
+    } 
 
-  .btn {
-  width: fit-content;
-  padding: 0 35px;
+    .btn {
+    width: fit-content;
+    padding: 0 35px;
+    }
   }
-}
 }
 
 @media screen and (min-width: 1280px) {
   .contacts-section {
     padding-bottom: 165px;
-    background-image:url('..images/contacts/contacts-section-bg1x.png'),
+    background-image:url("../../images/contacts/contacts-section-bg1x.png"),
     linear-gradient(to bottom,  $main-white-color 230px  $section-pink 230px);
+
     background-position: left 0 top 100px, left top;
     background-size: contain;
     background-repeat: no-repeat;
