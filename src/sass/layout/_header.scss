@@ -111,7 +111,7 @@ header {
     margin-left: 16px;
     height: 8px;
     width: 5px;
-    fill: $main-pink-color;
+    stroke: $main-pink-color;
 }
 .currentlink:focus {
     color: $main-pink-color;
@@ -159,6 +159,10 @@ header {
     padding: 12px 0 12px 21px;
     margin-right: 0;
     border: 1px solid $modal-menu-border-color;
+}
+.nav-item:hover,
+.nav-item:focus {
+    background-color: #e05b7a;
 }
 
 .currentlink:focus {
