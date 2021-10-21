@@ -48,7 +48,7 @@
     display: flex;
     margin-top: 20px;
 }
-    .products {
+    .hero-products {
         width: 61px;
         height: 24px;
         font-weight: 400;
@@ -212,7 +212,7 @@
     }
     .next-arrow {
         fill: #C7133E;
-        width: 12px;
+        width: 10px;
         height: 12px;
     }
     .circle {
@@ -308,7 +308,7 @@
     .hero-buttons {
         margin-top: 25px;
     }
-    .products {
+    .hero-products {
         width: 104px;
         height: 40px;
         font-weight: 400;
@@ -339,7 +339,7 @@
         background-image: url("/images/hero/desctop/ice-cream.png");
         background-repeat: no-repeat;
         position: relative;
-        top: 58px;
+        top: 61px;
         left: -23px;
         width: 236px;
         height: 557px;
@@ -371,7 +371,7 @@
         padding-left: 1px;
     }
     .next-arrow {
-        width: 20px;
+        width: 12px;
         height: 20px;
     }
     .hero-right-numbers {
@@ -421,5 +421,8 @@
     }
     .hero-number-items {
         flex-wrap: nowrap;
+    }
+    .mobile-menu {
+        display: none;
     }
 }
