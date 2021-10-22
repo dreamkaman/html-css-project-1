@@ -1,7 +1,7 @@
 // ABOUt//
 .about {
   background-color: $section-pink;
-  padding-bottom: 146px;
+  padding-bottom: 39px;
   padding-top: 125px;
 
   @media screen and (max-width: 767px) {
@@ -137,6 +137,7 @@
   line-height: 1.28;
   color: $main-pink-color;
   transition: background-color 250ms $timing-function;
+  cursor: pointer;
 
   // @media screen and (min-width: 768px) {
   //   margin-left: 17px;
