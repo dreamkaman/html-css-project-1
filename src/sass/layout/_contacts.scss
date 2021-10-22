@@ -6,6 +6,7 @@
     background-image: linear-gradient(to bottom, $main-white-color 0%, 7%, $section-pink 7% 100%);
   }
 }
+//=================================
 .contacts-list {
   @media screen and (min-width: 480px) {
     display: flex;
@@ -26,6 +27,7 @@
     // margin-left: -30px;
   }
 }
+//===========================================
 
 .contacts-item {
   width: 100%;
@@ -58,6 +60,7 @@
     padding: 52px 42px 61px;
   }
 }
+//==========================================================
 
 .contacts-title {
   display: inline;
@@ -96,6 +99,8 @@
   //   border-bottom: none;
   // }
 }
+//===========================================
+
 .contacts-city {
   font-family: $main-font-family;
   font-weight: 500;
@@ -115,6 +120,7 @@
     font-size: 16px;
   }
 }
+//================================================
 
 .contacts-descriptions {
   font-family: $main-font-family;
@@ -133,6 +139,9 @@
     font-size: 16px;
   }
 }
+
+//===========================================
+
 .contact-link {
   font-family: $main-font-family;
   font-style: normal;
@@ -156,6 +165,8 @@
   }
 }
 
+//==========================================
+
 .contacts-days {
   font-family: $main-font-family;
   font-weight: 500;
@@ -169,6 +180,8 @@
     font-size: 16px;
   }
 }
+
+//===============================================
 
 .contacts-time {
   font-family: $main-font-family;
@@ -185,7 +198,7 @@
     font-size: 16px;
   }
 }
-
+//=================================================
 @media screen and (min-width: 768px) {
   .contacts {
     padding-bottom: 158px;
@@ -195,57 +208,57 @@
     border-top: 1px solid $footer-border-color;
     padding-top: 32px;
   }
+}
+//=================================================
 
-  @media screen and (min-width: 480px) {
-    padding-top: 32px;
+@media screen and (min-width: 1280px) {
+  .contacts {
+    padding-bottom: 165px;
+    background-image: url('../images/contacts/contacts-section-bg1x.png'),
+      linear-gradient(to bottom, $main-white-color 0% 17%, $section-pink 17% 100%);
+    background-position: left 0 top 100px, left top;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
-  @media screen and (min-width: 1280px) {
-    .contacts {
-      padding-bottom: 165px;
-      background-image: url('../images/contacts/contacts-section-bg1x.png'),
-        linear-gradient(to bottom, $main-white-color 0% 17%, $section-pink 17% 100%);
-      background-position: left 0 top 100px, left top;
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
-
-    .contacts-cards {
-      padding: 32px 0;
-    }
-  }
-
-  .about-button {
-    background: $main-white-color;
-    border-radius: 22px;
-    border: none;
-    padding: 19px 36px 17px 35px;
-    align-items: center;
-    margin: 0;
-    font-family: DM Sans;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.28;
-    color: $main-pink-color;
-    transition: background-color 250ms $timing-function;
-  }
-  .arrow-icon {
-    stroke: $main-pink-color;
-    margin-left: 14px;
-    width: 4px;
-    height: 8px;
-  }
-  .about-button:hover,
-  .about-button:focus {
-    background-color: $main-pink-color;
-    color: $main-white-color;
-  }
-
-  .about-button:hover .arrow-icon,
-  .about-button:focus .arrow-icon {
-    stroke: $main-white-color;
+  .contacts-cards {
+    padding: 32px 0;
   }
 }
+
+//==========================================
+
+.about-button {
+  background: $main-white-color;
+  border-radius: 22px;
+  border: none;
+  padding: 19px 36px 17px 35px;
+  align-items: center;
+  margin: 0;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  color: $main-pink-color;
+  transition: background-color 250ms $timing-function;
+}
+.arrow-icon {
+  stroke: $main-pink-color;
+  margin-left: 14px;
+  width: 4px;
+  height: 8px;
+}
+.about-button:hover,
+.about-button:focus {
+  background-color: $main-pink-color;
+  color: $main-white-color;
+}
+
+.about-button:hover .arrow-icon,
+.about-button:focus .arrow-icon {
+  stroke: $main-white-color;
+}
+
 .contacts-btns {
   display: flex;
   justify-content: center;
