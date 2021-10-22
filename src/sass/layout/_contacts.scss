@@ -154,11 +154,11 @@ margin: 25px 0 25px 0;
 //   }
 }
 
-.about-button {
+.contacts-button {
   background: $main-white-color;
   border-radius: 22px;
   border: none;
-  padding: 19px 36px 17px 35px;
+  padding: 19px 18px 19px 17px;
   align-items: center;
   margin: 0;
   font-family: DM Sans;
@@ -167,23 +167,64 @@ margin: 25px 0 25px 0;
   line-height: 1.28;
   color: $main-pink-color;
   transition: background-color 250ms $timing-function;
+
+  @media screen and(min-width:767px) {
+      padding: 19px 36px 17px 35px;
+  }
+  @media screen and(min-width:767px){
+     padding: 19px 36px 17px 35px;
+  }
+
 }
-.arrow-icon {
+.contacts-button--white{
+padding: 19px 31px 19px 32px}
+.arrow-contacts {
   stroke: $main-pink-color;
-  margin-left: 14px;
+ margin-left: 14px;
   width: 4px;
   height: 8px;
+   @media screen and(min-width:767px) {
+      
+  margin-left: 8px;
+  }
+  @media screen and(min-width:767px){
+      margin-left: 8px;
+  }
+
 }
-.about-button:hover,
-.about-button:focus {
+
+
+.contacts-button:hover,
+.contacts-button:focus {
   background-color: $main-pink-color;
   color: $main-white-color;
 }
 
-.about-button:hover .arrow-icon,
-.about-button:focus .arrow-icon {
+.contacts-button:hover .arrow-contacts,
+.contacts-button:focus .arrow-contacts {
   stroke: $main-white-color;
 }
+<<<<<<< Updated upstream
+=======
+
+
+.contacts-button--pink {
+  background-color: $main-pink-color;
+  color: $main-white-color;
+
+  & .arrow-contacts {
+    stroke: $main-white-color;
+  }
+}
+
+.contacts-button--pink:hover {
+  background-color: $main-white-color;
+  color: $main-pink-color;
+  & .arrow-contacts {
+    stroke: $main-pink-color;
+  }
+ 
+>>>>>>> Stashed changes
 }
 .contacts-btns{
   display: flex;
@@ -192,12 +233,19 @@ margin: 25px 0 25px 0;
   @media screen and (max-width:767px){
     display:flex;
     flex-direction: column;
+<<<<<<< Updated upstream
   
 // width: 100%;
 //  flex-wrap: wrap;
  
+=======
+    align-items: center;
+
+  }
+>>>>>>> Stashed changes
 }
 }
+<<<<<<< Updated upstream
 .location-btn{
 margin-right: 15px;
 @media screen and (max-width:767px){
@@ -205,3 +253,11 @@ margin-right: 15px;
   margin-right: 0;
 }
 }
+=======
+// .contacts-btns{
+//     @media screen and(max-width:767px) {
+//    padding: 17x 17px 17px 17px
+//   }
+
+// }
+>>>>>>> Stashed changes
