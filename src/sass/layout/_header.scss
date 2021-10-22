@@ -146,6 +146,7 @@ header {
   border: none;
   padding: 0;
   line-height: 0;
+  cursor: pointer;
 }
 
 .btn-menu {
@@ -253,6 +254,8 @@ header {
     align-items: center;
     max-width: 1280px;
     margin: auto;
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 37px;
     background-color: transparent;
   }
