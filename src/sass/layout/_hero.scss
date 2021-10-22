@@ -14,10 +14,9 @@
 .hero-wrapper {
   width: 100%;
   height: 440px;
-  background-color: $card-bg-pink;
 }
-
 .slogan {
+  position: absolute;
   margin-top: 131px;
   z-index: 5;
   width: 218px;
@@ -127,6 +126,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .hero-container {
+    display: flex;
+  }
   .hero {
     width: 100%;
     height: 100%;
@@ -138,9 +140,15 @@
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    background-color: $card-bg-pink;
+  }
+  .hero-left {
+    display: flex;
+    flex-direction: column;
   }
   .slogan {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     margin-top: 102px;
     z-index: 5;
     width: 162px;
@@ -166,7 +174,7 @@
   }
   .hero-left-milk {
     width: 245px;
-    margin-top: 19px;
+    margin-top: 59px;
   }
   .hero-left-milk-wrap {
     display: flex;
@@ -282,7 +290,6 @@
   .hero-container {
     display: flex;
   }
-
   .hero-wrapper {
     justify-content: space-between;
     width: 100%;
@@ -320,7 +327,7 @@
   }
   .hero-left-milk {
     width: 418px;
-    margin-top: 56px;
+    margin-top: 111px;
     margin-left: -34px;
   }
   .circle {
