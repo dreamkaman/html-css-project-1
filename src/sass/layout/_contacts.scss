@@ -259,6 +259,22 @@
   stroke: $main-white-color;
 }
 
+.about-button--pink {
+  background-color: $main-pink-color;
+  color: $main-white-color;
+
+  & .arrow-icon {
+    stroke: $main-white-color;
+  }
+}
+
+.about-button--pink:hover {
+  background-color: $main-white-color;
+  color: $main-pink-color;
+  & .arrow-icon {
+    stroke: $main-pink-color;
+  }
+}
 .contacts-btns {
   display: flex;
   justify-content: center;
