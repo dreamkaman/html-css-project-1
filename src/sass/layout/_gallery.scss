@@ -1,0 +1,10 @@
+.gallery {
+  background: linear-gradient(to bottom, $section-pink 40%, $main-white-color 20% 100%);
+
+  @media screen and(min-width:768px) {
+    background: linear-gradient(to bottom, $section-pink 40%, $main-white-color 10% 100%);
+  }
+  @media screen and(min-width:1200px) {
+    background: linear-gradient(to bottom, $section-pink 40%, $main-white-color 4% 100%);
+  }
+}
