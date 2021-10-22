@@ -1,27 +1,23 @@
 .hero {
   position: relative;
-  background-color: $card-bg-pink;
-  // width: 100%;
-  // height: 100%;
-  // margin-left: auto;
-  // margin-right: auto;
+  background-color: #ffb8ca;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
   z-index: 0;
+  overflow: hidden;
 }
 .hero-container {
   position: relative;
-  overflow: hidden;
 }
 .hero-wrapper {
   width: 100%;
   height: 440px;
-  background-color: $card-bg-pink;
-}
-.hero-left {
-  display: flex;
 }
 .slogan {
+  position: absolute;
   margin-top: 131px;
-  margin-left: 20px;
   z-index: 5;
   width: 218px;
   height: 106px;
@@ -68,7 +64,7 @@
 
   &:hover,
   &:focus {
-    background-color: $main-pink-color-hover-btn;
+    background-color: #c7133e;
   }
 }
 .made {
@@ -130,21 +126,29 @@
 }
 
 @media screen and (min-width: 768px) {
-  // .hero {
-  //   width: 100%;
-  //   height: 100%;
-  //   margin-left: auto;
-  //   margin-right: auto;
-  // }
+  .hero-container {
+    display: flex;
+  }
+  .hero {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .hero-wrapper {
     display: flex;
     justify-content: space-between;
-    // width: 100%;
-    // height: 100%;
-    // background-color: $card-bg-pink;
+    width: 100%;
+    height: 100%;
+  }
+  .hero-left {
+    display: flex;
+    flex-direction: column;
   }
   .slogan {
-    margin-left: 34px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
     margin-top: 102px;
     z-index: 5;
     width: 162px;
@@ -170,7 +174,7 @@
   }
   .hero-left-milk {
     width: 245px;
-    margin-top: 19px;
+    margin-top: 59px;
   }
   .hero-left-milk-wrap {
     display: flex;
@@ -211,7 +215,7 @@
     cursor: pointer;
   }
   .next-arrow {
-    fill: $main-pink-color;
+    fill: #c7133e;
     width: 10px;
     height: 12px;
   }
@@ -238,18 +242,16 @@
     flex-direction: column;
     align-items: end;
     z-index: 0;
-    padding-top: 96px;
+    margin-top: 96px;
   }
   .hero-right-numbers {
     display: flex;
     flex-direction: column;
     width: 50px;
     height: 44px;
-    margin-right: 44px;
   }
   .hero-right-img {
     margin-top: 128px;
-    margin-right: 34px;
     width: 168px;
     height: 133px;
     background-image: url('/images/hero/tablet/tasty.png');
@@ -285,6 +287,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .hero-container {
+    display: flex;
+  }
   .hero-wrapper {
     justify-content: space-between;
     width: 100%;
@@ -292,7 +297,6 @@
   }
   .slogan {
     margin-top: 171px;
-    margin-left: 82px;
     width: 277px;
     height: 137px;
   }
@@ -323,13 +327,13 @@
   }
   .hero-left-milk {
     width: 418px;
-    margin-top: 56px;
+    margin-top: 111px;
     margin-left: -34px;
   }
   .circle {
     position: absolute;
     top: 50px;
-    left: 450px;
+    left: 400px;
     width: 538px;
     height: 538px;
   }
@@ -375,14 +379,13 @@
   .hero-right-numbers {
     width: 50px;
     height: 44px;
-    margin-right: 115px;
+    margin-right: 32px;
   }
   .hero-right {
-    padding-top: 156px;
+    margin-top: 156px;
   }
   .hero-right-img {
     margin-top: 236px;
-    margin-right: 109px;
     width: 293px;
     height: 232px;
     background-image: url('/images/hero/desctop/tasty.png');
