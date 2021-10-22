@@ -274,10 +274,10 @@ padding: 19px 31px 19px 32px}
   // color: $main-white-color;
 }
 
-.contacts-button:hover .arrow-contacts,
-.contacts-button:focus .arrow-contacts {
-  stroke: $main-white-color;
-}
+// .contacts-button:hover .arrow-contacts,
+// .contacts-button:focus .arrow-contacts {
+//   stroke: $main-white-color;
+// }
 
 
 .contacts-button--pink {
@@ -290,13 +290,9 @@ padding: 19px 31px 19px 32px}
 }
 
 .contacts-button--pink:hover {
-  background-color: $main-white-color;
-  color: $main-pink-color;
-  & .arrow-contacts {
-    stroke: $main-pink-color;
-  }
- 
+  background-color: $main-pink-color-hover-btn;
 }
+
 .contacts-btns {
   display: flex;
   justify-content: center;
