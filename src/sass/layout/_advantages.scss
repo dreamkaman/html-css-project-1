@@ -35,6 +35,7 @@
   }
 
   @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content: start;
   }
@@ -54,12 +55,14 @@
   }
 
   @media screen and (min-width: 468px) {
+    //
   }
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 120px) / 3);
     & + & {
       margin-left: 60px;
+      margin-top: 0;
     }
   }
 
