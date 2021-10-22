@@ -158,14 +158,14 @@
 }
 .about-button:hover,
 .about-button:focus {
-  background-color: $main-pink-color;
-  color: $main-white-color;
+  background-color: $hover-gray;
+  // color: $main-white-color;
 }
 
-.about-button:hover .arrow-icon,
-.about-button:focus .arrow-icon {
-  stroke: $main-white-color;
-}
+// .about-button:hover .arrow-icon,
+// .about-button:focus .arrow-icon {
+//   stroke: $main-white-color;
+// }
 
 .cow-img {
   margin: 26px 20px 46px;
