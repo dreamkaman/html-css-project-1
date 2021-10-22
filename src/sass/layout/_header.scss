@@ -6,9 +6,6 @@ header {
     z-index: 1;
     background-color: $card-bg-pink;
 }
-.container {
-    padding: 0;
-}
 .header-nav {
     max-width: 100%;
     margin: auto;
@@ -23,7 +20,6 @@ header {
 .header-logo {
     position: relative;
     width: 199px;
-    margin-left: 20px;
 }
 .btn-wrapper {
     margin-left: 20px;
@@ -51,7 +47,7 @@ header {
 }
 .mobile-menu-container {
     width: 250px;
-    height: 502px;
+    height: 100vh;
     padding: 60px 0;
 }
 .btn-menu {
@@ -111,7 +107,7 @@ header {
     margin-left: 16px;
     height: 8px;
     width: 5px;
-    fill: $main-pink-color;
+    stroke: $main-pink-color;
 }
 .currentlink:focus {
     color: $main-pink-color;
@@ -125,16 +121,12 @@ header {
 }
 .header-logo {
     max-width: 199px;
-    margin-left: 20px;
 }
 .nav-item:not(:last-child) {
     margin-right: 0;
 }
 .btn {
     margin-right: 0;
-}
-.btn-bynow {
-    margin-right: 34px;
 }
 .menu-open-icon {
     width: 20px;
@@ -160,7 +152,6 @@ header {
     margin-right: 0;
     border: 1px solid $modal-menu-border-color;
 }
-
 .currentlink:focus {
     color: $main-pink-color;
 }
@@ -169,13 +160,13 @@ header {
     color: $main-pink-color;
 }
 .mobile-menu {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     background-color: $main-white-color;
     z-index: 1;
     overflow-y: scroll;
-    transform: translateY(-100%);
+    transform: translateX(100%);
       opacity: 0;
       visibility: hidden;
       pointer-events: none;
@@ -183,7 +174,7 @@ header {
     transition: transform 500ms linear;
 }
 .mobile-menu.is-open {
-    transform: translateY(0%);
+    transform: translateX(0%);
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -206,7 +197,7 @@ header {
     right: 25px;
 }
 .menu-open.is-open {
-    transform: translateY(0%);
+    transform: translateX(0%);
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -222,21 +213,19 @@ header {
         padding-top: 37px;
     }
     .header-logo {
-        margin-left: 34px;
     }
     .header-btn {
         display: inline-block;
     }
     .menu-open {
-        position: absolute;
+        position: static;
         top: 52px;
-        right: 224px;
+        margin-left: 291px;
         margin-right: 0;
         z-index: 2;
     }
     .mobile-menu-container {
     width: 254px;
-    height: 1020px;
     padding-top: 60px;
     }
 }
@@ -265,10 +254,10 @@ header {
         z-index: 2;
     }
     .header-logo {
-        margin-left: 46px;
+        margin-left: -70px;
     }
     .btn-bynow {
-        margin-right: 115px;
+        margin-right: 0;
     }
     .nav-item:not(:first-child) {
         margin-left: 35px;

@@ -4,19 +4,50 @@
 }
 .footer__content {
   display: flex;
-  flex-direction: column;
-  padding-bottom: 43px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+
+  margin-bottom: 97px;
+
   @media screen and (min-width: 768px) {
-    flex-direction: unset;
+    // flex-direction: unset;
     justify-content: space-between;
-    padding-bottom: 91px;
+    margin-bottom: 91px;
   }
 }
 
-.fooer__contacts-wrapper {
+.footer__content-left-side {
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100%-1 * 50px) / 2);
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: calc((100%-1 * 30px) / 2);
+  }
+}
+
+.footer__content-right-side {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-end;
+
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+    width: calc((100%-1 * 50px) / 2);
+  }
+
+  @media screen and (min-width: 1280px) {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: calc((100%-1 * 30px) / 2);
+  }
 }
 
 .socials-list__link {
@@ -39,8 +70,22 @@
   display: flex;
   justify-content: flex-end;
   padding: 0;
-  margin: 0;
+  margin-bottom: 46px;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 46px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    margin-bottom: 46px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin: 0;
+  }
 }
+
 .social-list__item:not(:last-child) {
   margin-right: 25px;
 }
@@ -58,21 +103,23 @@
   font-weight: 400;
   color: $pink-text-color;
   text-transform: uppercase;
-  max-width: 510px;
+  // max-width: 510px;
 
   @media screen and (min-width: 768px) {
     font-size: 26px;
     line-height: 30px;
-    max-width: 340px;
+    // max-width: 340px;
   }
   @media screen and (min-width: 1280px) {
     font-size: 30px;
     line-height: 1.13;
-    max-width: 474px;
+    // max-width: 474px;
   }
 }
 
 .footer__text-accent {
+  display: block;
+  margin-top: 15px;
   text-transform: uppercase;
   font-weight: 400;
   text-align: left;
@@ -100,8 +147,8 @@
   border-top: solid 1px $footer-border-color;
   @media screen and (min-width: 768px) {
     width: 100%;
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-top: 29px;
+    padding-bottom: 18px;
   }
   @media screen and (min-width: 1280px) {
     padding-top: 9px;
