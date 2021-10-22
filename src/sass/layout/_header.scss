@@ -99,6 +99,7 @@ header {
   border-radius: 22px;
   border: none;
   cursor: pointer;
+  transition: background-color 250ms $timing-function;
 }
 .btn-bynow:hover,
 .btn-bynow:focus {
@@ -113,6 +114,10 @@ header {
 .currentlink:focus {
   color: $main-pink-color;
 }
+.nav-menu-item {
+  transition: color 250ms $timing-function;
+}
+
 .nav-menu-item:hover,
 .nav-menu-item:focus {
   color: $main-pink-color;
