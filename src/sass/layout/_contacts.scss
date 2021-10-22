@@ -270,8 +270,8 @@ padding: 19px 31px 19px 32px}
 
 .contacts-button:hover,
 .contacts-button:focus {
-  background-color: $main-pink-color;
-  color: $main-white-color;
+  background-color: $hover-gray;
+  // color: $main-white-color;
 }
 
 .contacts-button:hover .arrow-contacts,
