@@ -21,11 +21,11 @@
   width: 100%;
 
   @media screen and (min-width: 768px) {
-    width: calc((100%-1 * 50px) / 2);
+    width: calc((100% - 1 * 50px) / 2);
   }
 
   @media screen and (min-width: 1280px) {
-    width: calc((100%-1 * 30px) / 2);
+    width: calc((100% - 1 * 30px) / 2);
   }
 }
 
@@ -39,14 +39,14 @@
 
   @media screen and (min-width: 768px) {
     justify-content: flex-start;
-    width: calc((100%-1 * 50px) / 2);
+    width: calc((100% - 1 * 50px) / 2);
   }
 
   @media screen and (min-width: 1280px) {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    width: calc((100%-1 * 30px) / 2);
+    width: calc((100% - 1 * 30px) / 2);
   }
 }
 

@@ -1,0 +1,89 @@
+.gallery-grid {
+  background: linear-gradient(to bottom, $section-pink 40%, $main-white-color 20% 100%);
+
+  @media screen and(min-width:768px) {
+    background: linear-gradient(to bottom, $section-pink 40%, $main-white-color 10% 100%);
+  }
+  @media screen and(min-width:1200px) {
+    background: linear-gradient(to bottom, $section-pink 40%, $main-white-color 4% 100%);
+  }
+}
+
+.images-list {
+  width: 90%;
+  margin: 0 auto;
+
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  grid-template-areas:
+    '. . img-4 img-4 . . .'
+    '. . img-4 img-4 . img-8 .'
+    '. img-2 img-4 img-4 img-6 img-8 .'
+    'img-1 img-2 img-4 img-4 img-6 img-8 img-10'
+    'img-1 img-2 img-4 img-4 img-6 img-9 img-10'
+    'img-1 img-3 img-4 img-4 img-7 img-9 img-10'
+    '. img-3 img-5 . img-7 img-9 .'
+    '. img-3 img-5 . img-7 . .'
+    '. . img-5 . . . .';
+  cursor: pointer;
+
+  @media screen and(min-width:768px) {
+    gap: 4px;
+  }
+}
+
+.list-item {
+  position: relative;
+}
+
+.list-item:hover img {
+  position: absolute;
+  transform: scale(1.05);
+  z-index: 5;
+
+  box-shadow: 0px 0px 10px 2px #ffffff;
+
+  transition: transform cubic-bezier(0.175, 0.885, 0.32, 1.275) 800ms;
+}
+
+.list-item-01 {
+  grid-area: img-1;
+}
+
+.list-item-02 {
+  grid-area: img-2;
+}
+
+.list-item-03 {
+  grid-area: img-3;
+}
+
+.list-item-04 {
+  grid-area: img-4;
+}
+
+.list-item-05 {
+  grid-area: img-5;
+}
+
+.list-item-06 {
+  grid-area: img-6;
+}
+
+.list-item-07 {
+  grid-area: img-7;
+}
+
+.list-item-08 {
+  grid-area: img-8;
+}
+
+.list-item-09 {
+  grid-area: img-9;
+}
+
+.list-item-10 {
+  grid-area: img-10;
+}
